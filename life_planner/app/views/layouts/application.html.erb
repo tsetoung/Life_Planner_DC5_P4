@@ -6,6 +6,9 @@
   <%= stylesheet_link_tag    'application','http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+  <script src="/path/to/flickity.pkgd.js"></script>
+  <script src="countdown.js"></script>
 </head>
 <body>
   <div id="sidebar">
@@ -16,8 +19,8 @@
     </div>
       <ul>
         <li class="category">Website</li>
-        <li><%= link_to "Goals", root_path %></li>
         <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Goals", root_path %></li>
       </ul>
 
       <ul>
@@ -31,9 +34,9 @@
   <div id="main_content">
     <div id="header">
         <% if current_page?(root_path) %>
-            <p>All Goals</p>
+            <p>All My Goals:</p>
         <% elsif current_page?(about_path) %>
-            <p>About</p>
+            <p>This Page Is About Me:</p>
         <% else %>
             <%= link_to "Back to All Goals", root_path %>
         <% end %>

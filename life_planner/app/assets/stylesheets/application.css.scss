@@ -16,6 +16,25 @@
 
 @import 'normalize';
 
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery-cell {
+  width: 50%;
+  height: 200px;
+  margin-right: 10px;
+  overflow: scroll;
+  background: #778899;
+  counter-increment: gallery-cell;
+}
+
+
 html, body {
 	font-family: 'Raleway', sans-serif;
 }
@@ -93,14 +112,6 @@ a {
 			color: #33acb7 !important;
 		}
 	}
-}
-
-.clearfix:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
 }
 
 #main_content {
@@ -198,7 +209,7 @@ a {
 					}
 				}
 				.button {
-					float: right;
+					float: center;
 				}
 			}
 			input[type="text"], textarea {

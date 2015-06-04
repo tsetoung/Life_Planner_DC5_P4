@@ -14,10 +14,13 @@
   </p>
 
   <div id="comments">
-    <h2><%=@post.comments.count %>Comments</h2>
-    <%=render @post.comments %>
+    <h2><%=@post.comments.count %> Logs</h2>
 
-    <h3>Add a comment:</h3>
+      <div class="gallery js-flickity">
+        <%=render @post.comments %>
+      </div>
+
+    <h3>Add a log:</h3>
     <%= render "comments/form" %>
   </div>
 </div>
