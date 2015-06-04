@@ -12,6 +12,19 @@
   <p class="body">
     <%= @post.body %>
   </p>
+  <p>
+    <script language="JavaScript">
+      TargetDate = "12/31/2015 12:00 PM";
+      BackColor = "palegreen";
+      ForeColor = "navy";
+      CountActive = true;
+      CountStepper = -1;
+      LeadingZero = true;
+      DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
+      FinishMessage = "It is finally here!";
+    </script>
+    <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
+  </p>
 
   <div id="comments">
     <h2><%=@post.comments.count %> Logs</h2>
