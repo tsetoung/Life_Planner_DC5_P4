@@ -113,7 +113,15 @@ a {
 		}
 	}
 }
-
+#bg {
+  margin: 100%;
+}
+#overlay_content {
+  position:absolute;
+  top:0px;
+  padding: 30px;
+  color: #FFF;
+}
 #main_content {
 	margin-left: 250px;
 	#header {

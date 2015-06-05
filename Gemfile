@@ -28,6 +28,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty'
 gem "figaro"
 gem 'rails_12factor'
+gem 'json'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
